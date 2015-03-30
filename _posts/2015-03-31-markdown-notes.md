@@ -8,8 +8,9 @@ title:  Markdown语法学习
 >Markdown是一个将文本转化为HTML的工具，Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。
 --------
 ##标题
->Markdown提供两种方式(Setext和Atx)来显示标题
->**语法**
+Markdown提供两种方式(Setext和Atx)来显示标题
+###**语法**
+>
     Setext方式
     标题1
     ===========
@@ -22,7 +23,8 @@ title:  Markdown语法学习
     ##标题2
     ######标题6
 
-*效果*
+
+###*效果:*
 
 标题1
 ===========
@@ -30,8 +32,9 @@ title:  Markdown语法学习
 标题2
 -----------
 
-Atx方式
-----
+*Atx方式*
+
+
 #标题1
 ##标题2
 ######标题6
@@ -40,50 +43,55 @@ Atx方式
 ##列表
 
 无序列表用*,+或-后面加上空格来表示
->**语法**
+###**语法**
+
 >   
->* Item1
->* Item2
->* ttem3
+>\* Item1
+>\* Item2
+>\* ttem3
 >
->+ Item1
->+ Item2
->+ Item3
+>\+ Item1
+>\+ Item2
+>\+ Item3
 >   
->- Item1
->- Item2
->- Item3
-*效果*
+>\- Item1
+>\- Item2
+>\- Item3
+
+###*效果*
 
 * Item1
-* Item1
-* Item1
+* Item2
+* Item3
 
 + Item1
-+ Item1
-+ Item1
++ Item2
++ Item3
 
 - Item1
-- Item1
-- Item1
+- Item2
+- Item3
 
 ---------
 ##代码区域
 行内代码使用反斜杠\`表示.
 代码段落则是在每行文字前加4个空格或者一个缩进符表示
-**语法**
+
+###**语法:**
+
 >\```
 >int main(){
 >   printf("hello markdown\n");
 >   return 0;
 >}
->\```
+>```
 >   int main(){
 >       printf("hello markdown\n");
 >       return 0;
 >   }
 
-*效果*
+###*效果:*
+
 ```
 int main(){
     printf("hello markdown\n");
