@@ -46,17 +46,17 @@ Markdown提供两种方式(Setext和Atx)来显示标题
 ###**语法**
 
 >   
->\* Item1
->\* Item2
->\* ttem3
+>\* Item1 
+>\* Item2 
+>\* ttem3 
 >
->\+ Item1
->\+ Item2
->\+ Item3
+>\+ Item1 
+>\+ Item2 
+>\+ Item3 
 >   
->\- Item1
->\- Item2
->\- Item3
+>\- Item1 
+>\- Item2 
+>\- Item3 
 
 ###*效果*
 
@@ -80,15 +80,18 @@ Markdown提供两种方式(Setext和Atx)来显示标题
 ###**语法:**
 
 >\```
->int main(){
->   printf("hello markdown\n");
->   return 0;
->}
+>
+>int main(){  
+>   printf("hello markdown\n");  
+>   return 0;  
+>} 
+>
 >```
->   int main(){
->       printf("hello markdown\n");
->       return 0;
->   }
+>
+>   int main(){ 
+>       printf("hello markdown\n"); 
+>       return 0; 
+>   } 
 
 ###*效果:*
 
