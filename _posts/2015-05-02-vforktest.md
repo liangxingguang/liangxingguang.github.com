@@ -6,7 +6,8 @@ title: vfork子进程中使用return挂掉的原因
 今天在[酷壳](http://coolshell.cn)的时候，看到一篇有关于[vfork](http://coolshell.cn/articles/12103.html#more-12103)的子进程用return整个进程会挂掉的文章，故为此做一下笔记。  
 ##例子  
 在博客中，给出的例子是如下:
-```c
+
+```
 #include <stdio.h>  
 #include <stdlib.h>  
 #include <unistd.h>  
@@ -26,7 +27,7 @@ main(void){
     }
     printf("pid=%d, glob = %d, var = %d\n",getpid(),glob,var);
     return 0;
-}   
+}     
 ```  
 在编译运行这段代码时，程序会不断输出最后一个printf的内容，最后输出vfork error结束退出。而将return改成exit(0)则不会出现上述情况。这究竟是什么原因呢?  
 ##原因
