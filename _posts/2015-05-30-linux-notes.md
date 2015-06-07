@@ -48,9 +48,12 @@ title:  linux 使用备忘录
 
 ```  
 结果如下:  
+
 ```  
+
     [liang@liang-xing:~]$dpkg -S $(which more)
     util-linux: /bin/more
     sudo apt-get -d source "util-linux"  
+
 
 ```    
