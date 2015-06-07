@@ -36,17 +36,17 @@ title:  linux 使用备忘录
 ##Ubuntu下查看和下载命令的源码  
 ----------  
 在Ubuntu有一些常用的命令，这些命令很强大高效。若想了解其的内在实现，在网上搜其源代码也是一件麻烦费时的事情。可以通过如下方法方便获取命令的源码。  
-+查询命令源码所在的包是是什么。dpkg -S $(which comman)  
-+下载对应包的源码。 sudo apt-get -d source "package"  
++ 查询命令源码所在的包是是什么。dpkg -S $(which comman)  
++ 下载对应包的源码。 sudo apt-get -d source "package"  
 如要查看more命令的源码:  
 ```
-dpkg -S $(which more)  
+    dpkg -S $(which more)    
 
-``` 
-结果如下:
 ```  
-[liang@liang-xing:~]$dpkg -S $(which more)
-util-linux: /bin/more
-sudo apt-get -d source "util-linux"  
+结果如下:  
+```  
+    [liang@liang-xing:~]$dpkg -S $(which more)
+    util-linux: /bin/more
+    sudo apt-get -d source "util-linux"  
 
 ```    
