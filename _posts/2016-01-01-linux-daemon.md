@@ -1,6 +1,6 @@
 ---
 layout: default
-title:apue学习笔记
+title: apue学习笔记
 ---
 
 -----
